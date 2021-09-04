@@ -1,7 +1,7 @@
   body {                /* styling for background */
     font-size: 16px;
     font-family: system-ui;
-    background:-webkit-radial-gradient(top left, #90F6FB,#2C3283);
+    background:-no_repeat;
 }
 
 /* set width for form  */
