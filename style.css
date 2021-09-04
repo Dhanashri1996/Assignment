@@ -1,0 +1,67 @@
+  body {                /* styling for background */
+    font-size: 16px;
+    font-family: system-ui;
+    background:-webkit-radial-gradient(top left, #90F6FB,#2C3283);
+}
+
+/* set width for form  */
+.form{      
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: #ef6e58;
+}
+
+/* styling for form */
+form {
+    width: 300px;
+    padding: 15px 40px 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 4% auto;
+}
+label {
+    display: block;
+    margin-bottom: 5px
+}
+
+/* styling for form in input tag */
+input, select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color: #a9bae64a;
+}
+.box {
+    padding-bottom: 10px;
+}
+
+.error {
+    color: red;
+    font-size: 90%;
+}
+input[type=text]{
+        outline: none;
+}
+/* styling for button*/
+input[type="submit"] {
+    font-size: 110%;
+    font-weight: 100;
+    background: #ef6e58;
+    border-color: #ef6e58;
+    box-shadow: 0 3px 0 #bd432e;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background: #bd432e;
+    border-color: #bd432e;
+}
+

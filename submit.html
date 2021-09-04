@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+    body {
+        font-size: 16px;
+        font-family: system-ui;
+
+    }
+
+    .box {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        padding: 15px;
+        text-align: left;
+        font-size: 20px;
+    }
+
+
+    input[type=text] {
+        outline: none;
+    }
+
+    button , [type="submit"] {
+        font-size: 82%;
+        font-weight: 100;
+        background: #ef6e58;
+        border-color: #ef6e58;
+        box-shadow: 0 3px 0 #bd432e;
+        color: #fff;
+        margin-top: 13px;
+        cursor: pointer;
+    }
+
+    button , input[type="submit"]:hover {
+        background: #bd432e;
+        border-color: #bd432e;
+    }
+</style>
+
+<body onload='document.form1.text1.focus()'>
+    
+         <div class="mail">
+        
+        <form name="form1" >
+
+
+    
+    <div class="box">
+        Dear Customer , Your OTP is <span id="otp"> </span>
+    </div>
+    
+    
+    <button type="button" onclick="generate()" id=" generat">Generate OTP</button>
+    
+        
+        <ul>
+        
+        <input type='text' name='text1'/>
+        
+        <input type="submit" name="submit" value="Verify Otp" onclick="allLetter(document.form1.text1)" >
+        
+        </ul>
+        </form>
+        </div>
+
+   
+
+
+   
+
+
+
+
+
+
+    <script>
+
+       
+      //A function for generating otp 
+      
+        function generate() {
+
+            
+
+            let num = '1234567890';
+            let OTP = '';
+            
+            for (let i = 0; i < 4; i++) {
+
+                OTP += num[Math.floor(Math.random() * 10)];  // random method 0 to 9
+
+            }
+            document.getElementById('otp').innerHTML = OTP;
+
+
+        }
+
+
+
+
+   
+
+//function for verify the the otp
+
+        function allLetter(inputtxt)
+        { 
+        var letters = /^[0-9]+$/;
+        if(inputtxt.value.match(letters) )
+        {
+        alert('Thank you for inquiry');
+        return true;
+        }
+        else if (inputtxt != letters)
+        {
+        alert('Please enter valid otp');
+        return false;
+        }
+        else
+        {
+        alert('Please enter otp');
+        return false;
+        }
+        }
+
+
+        
+
+           
+
+            
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
